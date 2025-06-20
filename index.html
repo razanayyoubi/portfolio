@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razan Al Ayoubi - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[#18181B] text-[#F4F4F5] ">
+
+    <!-- Header/Navbar -->
+    <header class="sticky top-0 bg-[#2A2A2E] shadow-md">
+        <nav class="h-16 flex items-center justify-center">
+            <ul class="flex flex-row space-x-8 text-xl text-[#BFA3FB]">
+                <li><a href="#home" class="hover:text-[#DDD6FE]">Home</a></li>
+                <li><a href="#projects" class="hover:text-[#DDD6FE]">Projects</a></li>
+                <li><a href="#skills" class="hover:text-[#DDD6FE]">Skills</a></li>
+                <li><a href="#about" class="hover:text-[#DDD6FE]">About</a></li>
+                <li><a href="#contact" class="hover:text-[#DDD6FE]">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <!-- Home Section -->
+    <section id="home" class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-8 py-20 ">
+        <div class="flex flex-col space-y-4 text-center items-center">
+            <p class="text-5xl font-serif font-bold italic text-[#F4F4F5] ">Razan Al Ayoubi</p>
+            <p class="text-3xl text-[#DDD6FE]">Developer | Computer Science Student</p>
+
+            <section id="cv">
+                <p class="text-3xl text-[#DDD6FE] mt-3">Check my CV!</p>
+                <br>
+                <button><a href="./Files/Razan Al Ayoubi - CV.pdf" download
+                        class=" bg-purple-700 text-white px-4 py-2 rounded-full hover:bg-purple-800 transition">
+                        Download CV
+                    </a></button>
+            </section>
+
+            <a href="#projects">
+                <button
+                    class="mt-4 bg-[#2A2A2E] w-40 h-10 rounded-full text-xl text-[#A78BFA] border border-[#A78BFA] hover:bg-[#A78BFA] hover:text-[#18181B] hover:shadow-lg transition duration-300">
+                    Learn More!
+                </button>
+            </a>
+        </div>
+
+        <div class="flex justify-center items-center">
+            <img src="./Images/grad pic.jpg" alt="Picture"
+                class="w-80 h-80 rounded-full border-4 border-[#DDD6FE] object-cover" />
+        </div>
+        <br>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="px-8 py-20 text-center bg-[#1F1F22]">
+        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Projects</h2>
+        <p class="text-gray-400 mb-10">Some of the work I've done recently...</p>
+        <!-- You can add your project cards or descriptions here -->
+        <div class="text-gray-400 italic">Coming soon...</div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="px-8 py-20 text-center">
+        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Technical Skills</h2>
+
+        <div class="grid grid-cols-3 gap-6 text-center">
+            <!-- Java -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>Java</span>
+                <img src="./Images/Java.png" alt="Java" class="h-12 w-12" />
+            </div>
+
+            <!-- Python -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>Python</span>
+                <img src="./Images/Python.png" alt="Python" class="h-12 w-12" />
+            </div>
+
+            <!-- HTML -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>HTML</span>
+                <img src="./Images/html.png" alt="HTML" class="h-12 w-12" />
+            </div>
+
+            <!-- CSS -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>CSS</span>
+                <img src="./Images/css.png" alt="CSS" class="h-12 w-12" />
+            </div>
+    
+            <!-- Tailwind CSS -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>Tailwind CSS</span>
+                <img src="./Images/tailwind.png" alt="Tailwind CSS" class="h-12 w-12" />
+            </div>
+
+            <!-- JavaScript -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>JavaScript</span>
+                <img src="./Images/js.png" alt="JavaScript" class="h-12 w-12" />
+            </div>
+
+            <!-- Pandas -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>Pandas</span>
+                <img src="/icons/pandas.png" alt="Pandas" class="h-12 w-12" />
+            </div>
+
+            <!-- NumPy -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>NumPy</span>
+                <img src="/icons/numpy.png" alt="NumPy" class="h-12 w-12" />
+            </div>
+
+            <!-- Matplotlib -->
+            <div class="flex flex-col items-center space-y-2">
+                <span>Matplotlib</span>
+                <img src="./Images/Matplotlib.png" alt="Matplotlib" class="h-20 w-30" />
+            </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="px-8 py-20  bg-[#1F1F22] text-center">
+        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">About Me</h2>
+        <p class="max-w-2xl mx-auto text-gray-300 text-xl">
+            I'm a Computer Science student at the University of Sciences and Arts in Lebanon (USAL) with a passion for
+            development and building practical projects that solve real-world problems. I enjoy mixing creativity with
+            logic to build user-centered solutions.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class=" py-10 text-center text-lg">
+        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Contact</h2>
+        <p class="text-gray-300 mb-4">Get in touch via social or email.</p>
+        <a href="mailto:razanayoubi14@gmail.com" class="text-[#DDD6FE] hover:text-white">razanayoubi14@gmail.com</a>
+        <div class="flex justify-center space-x-6 pt-6">
+            <a href="https://github.com/razanayyoubi" class="hover:text-[#DDD6FE]" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa" class="hover:text-[#DDD6FE]" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+
+        </div>
+        <div class="mt-10">
+            <p class="pb-5 text text-xl font-bold text-[#BFA3FB] italic">Send instant and quick message </p>
+            <form action="https://formspree.io/f/mnnvbzre" method="POST"
+                class="flex flex-col space-y-4 max-w-md mx-auto bg-[#374151] p-6 rounded shadow-lg">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="p-2 border border-purple-400 rounded text-gray-300 bg-[#4B5563]" required />
+                <input type="email" name="email" placeholder="Your Email"
+                    class="p-2 border border-purple-400 rounded text-gray-300 bg-[#4B5563]" required />
+                <textarea name="message" placeholder="Your Message"
+                    class="p-2 border border-purple-400 rounded h-32 text-gray-300 bg-[#4B5563]" required></textarea>
+                <button type="submit"
+                    class="bg-purple-700 text-white text-xl font-bold p-3 rounded hover:bg-[#5B21B6] transition-colors duration-300">
+                    Send
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class=" bg-[#2A2A2E] text-center p-10 text-xl text-[#A78BFA]">
+        <p>Designed & developed by Razan Al Ayoubi</p>
+        <p>Beirut, Lebanon</p>
+    </footer>
+
+</body>
+
+</html>
