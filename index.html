@@ -2,176 +2,320 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Razan Al Ayoubi - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razan Al Ayoubi - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body class="bg-[#18181B] text-[#F4F4F5] ">
 
-    <!-- Header/Navbar -->
-    <header class="sticky top-0 bg-[#2A2A2E] shadow-md">
-        <nav class="h-16 flex items-center justify-center">
-            <ul class="flex flex-row space-x-8 text-xl text-[#BFA3FB]">
-                <li><a href="#home" class="hover:text-[#DDD6FE]">Home</a></li>
-                <li><a href="#projects" class="hover:text-[#DDD6FE]">Projects</a></li>
-                <li><a href="#skills" class="hover:text-[#DDD6FE]">Skills</a></li>
-                <li><a href="#about" class="hover:text-[#DDD6FE]">About</a></li>
-                <li><a href="#contact" class="hover:text-[#DDD6FE]">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <!-- Home Section -->
-    <section id="home" class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-8 py-20 ">
-        <div class="flex flex-col space-y-4 text-center items-center">
-            <p class="text-5xl font-serif font-bold italic text-[#F4F4F5] ">Razan Al Ayoubi</p>
-            <p class="text-3xl text-[#DDD6FE]">Developer | Computer Science Student</p>
+  <!-- Header/Navbar -->
+  <header class="sticky top-0 z-50 bg-[#2A2A2E] shadow-md">
+    <nav class="flex flex-col md:flex-row items-center justify-between px-6 md:px-10 py-4">
+      <!-- Top Bar: Logo + Hamburger -->
+      <div class="flex w-full items-center justify-between md:w-auto">
+        <div class="text-[#BFA3FB] text-2xl font-bold">&lt;RazCode/&gt;</div>
+        <!-- Header/Navbar <div class="text-[#BFA3FB] text-2xl font-bold">Razan Al Ayoubi</div>-->
 
-            <section id="cv">
-                <p class="text-3xl text-[#DDD6FE] mt-3">Check my CV!</p>
-                <br>
-                <button><a href="./Files/Razan Al Ayoubi - CV.pdf" download
-                        class=" bg-purple-700 text-white px-4 py-2 rounded-full hover:bg-purple-800 transition">
-                        Download CV
-                    </a></button>
-            </section>
 
-            <a href="#projects">
-                <button
-                    class="mt-4 bg-[#2A2A2E] w-40 h-10 rounded-full text-xl text-[#A78BFA] border border-[#A78BFA] hover:bg-[#A78BFA] hover:text-[#18181B] hover:shadow-lg transition duration-300">
-                    Learn More!
-                </button>
-            </a>
-        </div>
+        <!-- Hamburger Icon (Mobile) -->
+        <button id="menuToggle" class="md:hidden text-[#BFA3FB] text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
 
-        <div class="flex justify-center items-center">
-            <img src="./Images/grad pic.jpg" alt="Picture"
-                class="w-80 h-80 rounded-full border-4 border-[#DDD6FE] object-cover" />
-        </div>
+      <!-- Nav Links -->
+      <ul id="navMenu" class="hidden flex-col w-full mt-4 space-y-4 text-center text-xl text-[#BFA3FB] 
+             md:flex md:flex-row md:space-y-0 md:space-x-8 md:mt-0 md:w-auto md:justify-center">
+        <li><a href="#home" class="hover:text-[#DDD6FE]">Home</a></li>
+        <li><a href="#projects" class="hover:text-[#DDD6FE]">Projects</a></li>
+        <li><a href="#skills" class="hover:text-[#DDD6FE]">Skills</a></li>
+        <li><a href="#about" class="hover:text-[#DDD6FE]">About</a></li>
+        <li><a href="#contact" class="hover:text-[#DDD6FE]">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- JavaScript Toggle -->
+    <script>
+      const toggleBtn = document.getElementById('menuToggle');
+      const navMenu = document.getElementById('navMenu');
+      toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+      });
+    </script>
+  </header>
+  <br>
+
+  <!-- Home Section -->
+  <section id="home" class="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-8 py-20 ">
+    <div class="flex flex-col space-y-4 text-center items-center">
+      <p class="text-5xl font-serif font-bold italic text-[#F4F4F5] ">Razan Al Ayoubi</p>
+      <p class="text-3xl text-[#DDD6FE]">Developer | Computer Science Student</p>
+
+      <section id="cv">
+        <p class="text-3xl text-[#DDD6FE] mt-3">Check my CV!</p>
         <br>
-    </section>
+        <button><a href="./Files/Razan Al Ayoubi (CV).pdf" download
+            class=" bg-purple-700 text-white px-4 py-2 rounded-full hover:bg-purple-800 transition">
+            Download CV
+          </a></button>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="px-8 py-20 text-center bg-[#1F1F22]">
-        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Projects</h2>
-        <p class="text-gray-400 mb-10">Some of the work I've done recently...</p>
-        <!-- You can add your project cards or descriptions here -->
-        <div class="text-gray-400 italic">Coming soon...</div>
-    </section>
+      <a href="#projects">
+        <button
+          class="mt-4 bg-[#2A2A2E] w-40 h-10 rounded-full text-xl text-[#A78BFA] border border-[#A78BFA] hover:bg-[#A78BFA] hover:text-[#18181B] hover:shadow-lg transition duration-300">
+          Learn More!
+        </button>
+      </a>
+    </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="px-8 py-20 text-center">
-        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Technical Skills</h2>
+    <div class="flex justify-center items-center">
+      <div class="relative w-80 h-80">
+        <!-- Purple Neon Glow -->
+        <div class="absolute inset-0 rounded-full bg-purple-500 blur-2xl opacity-70 z-0 animate-pulse"></div>
 
-        <div class="grid grid-cols-3 gap-6 text-center">
-            <!-- Java -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>Java</span>
-                <img src="./Images/Java.png" alt="Java" class="h-12 w-12" />
-            </div>
+        <!-- Actual Image -->
+        <img src="./Images/grad pic.jpg" alt="Picture" class="w-80 h-80 rounded-full border-4 border-[#DDD6FE] object-cover relative z-10
+            transition-transform duration-500 ease-in-out
+            hover:scale-105 hover:-rotate-3" />
+      </div>
+    </div>
+    <br>
+  </section>
 
-            <!-- Python -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>Python</span>
-                <img src="./Images/Python.png" alt="Python" class="h-12 w-12" />
-            </div>
+  <!-- Projects Section -->
 
-            <!-- HTML -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>HTML</span>
-                <img src="./Images/html.png" alt="HTML" class="h-12 w-12" />
-            </div>
+  <section id="projects" class="px-8 py-20 bg-[#1F1F22]">
+    <h2 class="text-4xl font-bold text-center text-[#BFA3FB] mb-10">Projects</h2>
 
-            <!-- CSS -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>CSS</span>
-                <img src="./Images/css.png" alt="CSS" class="h-12 w-12" />
-            </div>
-    
-            <!-- Tailwind CSS -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>Tailwind CSS</span>
-                <img src="./Images/tailwind.png" alt="Tailwind CSS" class="h-12 w-12" />
-            </div>
+    <!-- Projects Grid -->
+    <div
+      class="grid grid-cols-3 [@media(max-width:1100px)]:grid-cols-2 [@media(max-width:780px)]:grid-cols-1 gap-8 justify-items-center">
 
-            <!-- JavaScript -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>JavaScript</span>
-                <img src="./Images/js.png" alt="JavaScript" class="h-12 w-12" />
-            </div>
-
-            <!-- Pandas -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>Pandas</span>
-                <img src="/icons/pandas.png" alt="Pandas" class="h-12 w-12" />
-            </div>
-
-            <!-- NumPy -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>NumPy</span>
-                <img src="/icons/numpy.png" alt="NumPy" class="h-12 w-12" />
-            </div>
-
-            <!-- Matplotlib -->
-            <div class="flex flex-col items-center space-y-2">
-                <span>Matplotlib</span>
-                <img src="./Images/Matplotlib.png" alt="Matplotlib" class="h-20 w-30" />
-            </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="px-8 py-20  bg-[#1F1F22] text-center">
-        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">About Me</h2>
-        <p class="max-w-2xl mx-auto text-gray-300 text-xl">
-            I'm a Computer Science student at the University of Sciences and Arts in Lebanon (USAL) with a passion for
-            development and building practical projects that solve real-world problems. I enjoy mixing creativity with
-            logic to build user-centered solutions.
-        </p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class=" py-10 text-center text-lg">
-        <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Contact</h2>
-        <p class="text-gray-300 mb-4">Get in touch via social or email.</p>
-        <a href="mailto:razanayoubi14@gmail.com" class="text-[#DDD6FE] hover:text-white">razanayoubi14@gmail.com</a>
-        <div class="flex justify-center space-x-6 pt-6">
-            <a href="https://github.com/razanayyoubi" class="hover:text-[#DDD6FE]" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa" class="hover:text-[#DDD6FE]" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
-
+      <!-- Project 1: UMS -->
+      <div
+        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <div class="h-44 w-full overflow-hidden rounded-t-2xl">
+          <img src="./Images/UMS.png" alt="University Management System"
+            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
         </div>
-        <div class="mt-10">
-            <p class="pb-5 text text-xl font-bold text-[#BFA3FB] italic">Send instant and quick message </p>
-            <form action="https://formspree.io/f/mnnvbzre" method="POST"
-                class="flex flex-col space-y-4 max-w-md mx-auto bg-[#374151] p-6 rounded shadow-lg">
-                <input type="text" name="name" placeholder="Your Name"
-                    class="p-2 border border-purple-400 rounded text-gray-300 bg-[#4B5563]" required />
-                <input type="email" name="email" placeholder="Your Email"
-                    class="p-2 border border-purple-400 rounded text-gray-300 bg-[#4B5563]" required />
-                <textarea name="message" placeholder="Your Message"
-                    class="p-2 border border-purple-400 rounded h-32 text-gray-300 bg-[#4B5563]" required></textarea>
-                <button type="submit"
-                    class="bg-purple-700 text-white text-xl font-bold p-3 rounded hover:bg-[#5B21B6] transition-colors duration-300">
-                    Send
-                </button>
-            </form>
+        <div class="p-4 text-white">
+          <h3 class="text-lg font-semibold">University Management System</h3>
+          <p class="text-sm text-gray-300 mt-1">
+            Java-based app to manage students, instructors & courses using Swing and OOP.
+          </p>
+          <div class="mt-3">
+            <a href="https://github.com/razanayyoubi/University-Management-System-Java" target="_blank"
+              class="text-xl text-gray-400 hover:text-white">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
+      </div>
 
-    </section>
+      <!-- Project 2: LearnHub -->
+      <div
+        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <div class="h-44 w-full overflow-hidden rounded-t-2xl">
+          <img src="./Images/LearnHub.png" alt="LearnHub"
+            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+        </div>
+        <div class="p-4 text-white">
+          <h3 class="text-lg font-semibold">LearnHub</h3>
+          <p class="text-sm text-gray-300 mt-1">
+            A platform connecting students to curated learning resources. Built with HTML and CSS.
+          </p>
+          <div class="mt-3">
+            <a href="https://github.com/razanayyoubi/learningPlatform" target="_blank"
+              class="text-xl text-gray-400 hover:text-white">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer class=" bg-[#2A2A2E] text-center p-10 text-xl text-[#A78BFA]">
-        <p>Designed & developed by Razan Al Ayoubi</p>
-        <p>Beirut, Lebanon</p>
-    </footer>
+      <!-- Project 3: Daily Schedule -->
+      <div
+        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <div class="h-44 w-full overflow-hidden rounded-t-2xl bg-[#DDD6FE] flex items-center justify-center">
+          <img src="./Images/daily schedule.png" alt="LearnHub"
+            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+        </div>
+        <div class="p-4 text-white">
+          <h3 class="text-lg font-semibold">Daily Schedule</h3>
+          <p class="text-sm text-gray-300 mt-1">
+            A to-do and scheduling app with time-blocking, reminders, and local storage. Built with HTML and CSS.
+          </p>
+          <div class="mt-3">
+            <a href="https://github.com/razanayyoubi/daily-schedule" target="_blank"
+              class="text-xl text-gray-400 hover:text-white">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Beirut Bites -->
+      <div
+        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <div class="h-44 w-full overflow-hidden rounded-t-2xl bg-[#DDD6FE] flex items-center justify-center">
+          <img src="./Images/Beirut Bites.png" alt="LearnHub"
+            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+        </div>
+        <div class="p-4 text-white">
+          <h3 class="text-lg font-semibold">Beirut Bites</h3>
+          <p class="text-sm text-gray-300 mt-1">
+            A local food delivery app made on Code.org concept with menu browsing and order cart.
+          </p>
+          <div class="mt-3">
+            <a href="https://studio.code.org/projects/applab/b3gogSxFjXn9gdcg240YFzGi7CAwZQib5IkJC39FUaY"
+              target="_blank" class="text-xl text-gray-400 hover:text-white">
+              <i class="fas fa-link"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="px-8 py-20 text-center bg-[#1f1f27] ">
+    <h2 class="text-4xl font-bold text-[#BFA3FB] mb-12">Technical Skills</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Java -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="devicon:java" class="text-white" style="font-size: 64px;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">Java</span>
+      </div>
+
+      <!-- Python -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="devicon:python" style="font-size: 64px; color: white;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">Python</span>
+      </div>
+
+      <!-- HTML -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="vscode-icons:file-type-html" style="font-size: 64px;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">HTML</span>
+      </div>
+
+      <!-- CSS -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="vscode-icons:file-type-css" style="font-size: 64px;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">CSS</span>
+      </div>
+
+      <!-- Tailwind -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="devicon:tailwindcss" style="font-size: 64px;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">Tailwind CSS</span>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="logos:javascript" style="font-size: 64px;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">JavaScript</span>
+      </div>
+
+      <!-- Pandas -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="simple-icons:pandas" style="font-size: 64px; color: white;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">Pandas</span>
+      </div>
+
+      <!-- NumPy -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <iconify-icon icon="simple-icons:numpy" style="font-size: 64px; color: white;"></iconify-icon>
+        <span class="text-white text-lg mt-4 font-medium">NumPy</span>
+      </div>
+
+      <!-- Matplotlib -->
+      <div class="flex flex-col items-center bg-[#2c2c3a] p-6 rounded-2xl shadow-lg
+         transition-shadow duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib"
+          class="h-16 w-16 object-contain mb-4" />
+        <span class="text-white text-lg mt-4 font-medium">Matplotlib</span>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- About Section -->
+  <section id="about" class="px-8 py-20  bg-[#1F1F22] text-center">
+    <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">About Me</h2>
+    <p class="max-w-2xl mx-auto text-gray-300 text-xl">
+      I'm a Computer Science student at the University of Sciences and Arts in Lebanon (USAL) with a passion for
+      development and building practical projects that solve real-world problems. I enjoy mixing creativity with
+      logic to build user-centered solutions.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class=" py-10 text-center text-lg">
+    <h2 class="text-4xl font-bold text-[#BFA3FB] mb-6">Contact</h2>
+    <p class="text-gray-300 mb-4">Get in touch via social or email.</p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=razanayoubi14@gmail.com" target="_blank"
+      rel="noopener noreferrer" class="text-[#DDD6FE] hover:text-white">
+      razanayoubi14@gmail.com
+    </a>
+
+    <div class="flex justify-center space-x-6 pt-6">
+      <a href="https://github.com/razanayyoubi" class="hover:text-[#DDD6FE]" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa" class="hover:text-[#DDD6FE]" target="_blank"
+        rel="noopener noreferrer">LinkedIn</a>
+
+    </div>
+    <div class="mt-10 ml-10 mr-10 ">
+      <p class="pb-5 text text-xl font-bold text-[#BFA3FB] italic">Send instant and quick message </p>
+      <form action="https://formspree.io/f/mnnvbzre" method="POST"
+        class="flex flex-col space-y-4 max-w-md mx-auto bg-[#374151] p-6 rounded shadow-lg">
+        <input type="text" name="name" placeholder="Your Name"
+          class="p-2 border border-purple-400 rounded text-gray-300 bg-[#4B5563]" required />
+        <input type="email" name="email" placeholder="Your Email"
+          class="p-2 border border-purple-400 rounded text-gray-300 bg-[#4B5563]" required />
+        <textarea name="message" placeholder="Your Message"
+          class="p-2 border border-purple-400 rounded h-32 text-gray-300 bg-[#4B5563]" required></textarea>
+        <button type="submit"
+          class="bg-purple-700 text-white text-xl font-bold p-3 rounded hover:bg-[#5B21B6] transition-colors duration-300">
+          Send
+        </button>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class=" bg-[#2A2A2E] text-center p-10 text-xl text-[#A78BFA]">
+    <p>Designed & developed by Razan Al Ayoubi</p>
+    <p>Beirut, Lebanon</p>
+  </footer>
 
 </body>
 
