@@ -46,7 +46,7 @@
       </ul>
     </nav>
 
-    <!-- JavaScript Toggle -->
+    <!-- JavaScript -->
     <script>
       const toggleBtn = document.getElementById('menuToggle');
       const navMenu = document.getElementById('navMenu');
@@ -93,102 +93,101 @@
     </div>
     <br>
   </section>
+<!-- Projects Section -->
 
-  <!-- Projects Section -->
+<section id="projects" class="px-4 md:px-8 py-20 bg-[#1F1F22]">
+  <h2 class="text-4xl font-bold text-center text-[#BFA3FB] mb-10">Projects</h2>
 
-  <section id="projects" class="px-8 py-20 bg-[#1F1F22]">
-    <h2 class="text-4xl font-bold text-center text-[#BFA3FB] mb-10">Projects</h2>
+  <!-- Projects Grid -->
+  <div
+    class="grid grid-cols-3 [@media(max-width:1100px)]:grid-cols-2 [@media(max-width:780px)]:grid-cols-1 gap-8 justify-items-center">
 
-    <!-- Projects Grid -->
+    <!-- Project 1: UMS -->
     <div
-      class="grid grid-cols-3 [@media(max-width:1100px)]:grid-cols-2 [@media(max-width:780px)]:grid-cols-1 gap-8 justify-items-center">
-
-      <!-- Project 1: UMS -->
-      <div
-        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
-        <div class="h-44 w-full overflow-hidden rounded-t-2xl">
-          <img src="./Images/UMS.png" alt="University Management System"
-            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
-        </div>
-        <div class="p-4 text-white">
-          <h3 class="text-lg font-semibold">University Management System</h3>
-          <p class="text-sm text-gray-300 mt-1">
-            Java-based app to manage students, instructors & courses using Swing and OOP.
-          </p>
-          <div class="mt-3">
-            <a href="https://github.com/razanayyoubi/University-Management-System-Java" target="_blank"
-              class="text-xl text-gray-400 hover:text-white">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
+      class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+      <div class="h-44 w-full overflow-hidden rounded-t-2xl">
+        <img src="./Images/UMS.png" alt="University Management System"
+          class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+      </div>
+      <div class="p-4 text-white">
+        <h3 class="text-lg font-semibold">University Management System</h3>
+        <p class="text-sm text-gray-300 mt-1">
+          Java-based app to manage students, instructors & courses using Swing and OOP.
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/razanayyoubi/University-Management-System-Java" target="_blank"
+            class="text-xl text-gray-400 hover:text-white">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
-
-      <!-- Project 2: LearnHub -->
-      <div
-        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
-        <div class="h-44 w-full overflow-hidden rounded-t-2xl">
-          <img src="./Images/LearnHub.png" alt="LearnHub"
-            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
-        </div>
-        <div class="p-4 text-white">
-          <h3 class="text-lg font-semibold">LearnHub</h3>
-          <p class="text-sm text-gray-300 mt-1">
-            A platform connecting students to curated learning resources. Built with HTML and CSS.
-          </p>
-          <div class="mt-3">
-            <a href="https://github.com/razanayyoubi/learningPlatform" target="_blank"
-              class="text-xl text-gray-400 hover:text-white">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3: Daily Schedule -->
-      <div
-        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
-        <div class="h-44 w-full overflow-hidden rounded-t-2xl bg-[#DDD6FE] flex items-center justify-center">
-          <img src="./Images/daily schedule.png" alt="LearnHub"
-            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
-        </div>
-        <div class="p-4 text-white">
-          <h3 class="text-lg font-semibold">Daily Schedule</h3>
-          <p class="text-sm text-gray-300 mt-1">
-            A to-do and scheduling app with time-blocking, reminders, and local storage. Built with HTML and CSS.
-          </p>
-          <div class="mt-3">
-            <a href="https://github.com/razanayyoubi/daily-schedule" target="_blank"
-              class="text-xl text-gray-400 hover:text-white">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4: Beirut Bites -->
-      <div
-        class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
-        <div class="h-44 w-full overflow-hidden rounded-t-2xl bg-[#DDD6FE] flex items-center justify-center">
-          <img src="./Images/Beirut Bites.png" alt="LearnHub"
-            class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
-        </div>
-        <div class="p-4 text-white">
-          <h3 class="text-lg font-semibold">Beirut Bites</h3>
-          <p class="text-sm text-gray-300 mt-1">
-            A local food delivery app made on Code.org concept with menu browsing and order cart.
-          </p>
-          <div class="mt-3">
-            <a href="https://studio.code.org/projects/applab/b3gogSxFjXn9gdcg240YFzGi7CAwZQib5IkJC39FUaY"
-              target="_blank" class="text-xl text-gray-400 hover:text-white">
-              <i class="fas fa-link"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
+
+    <!-- Project 2: LearnHub -->
+    <div
+      class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+      <div class="h-44 w-full overflow-hidden rounded-t-2xl">
+        <img src="./Images/LearnHub.png" alt="LearnHub"
+          class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+      </div>
+      <div class="p-4 text-white">
+        <h3 class="text-lg font-semibold">LearnHub</h3>
+        <p class="text-sm text-gray-300 mt-1">
+          A platform connecting students to curated learning resources. Built with HTML and CSS.
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/razanayyoubi/learningPlatform" target="_blank"
+            class="text-xl text-gray-400 hover:text-white">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3: Daily Schedule -->
+    <div
+      class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+      <div class="h-44 w-full overflow-hidden rounded-t-2xl bg-[#DDD6FE] flex items-center justify-center">
+        <img src="./Images/daily schedule.png" alt="Daily Schedule"
+          class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+      </div>
+      <div class="p-4 text-white">
+        <h3 class="text-lg font-semibold">Daily Schedule</h3>
+        <p class="text-sm text-gray-300 mt-1">
+          A to-do and scheduling app with time-blocking, reminders, and local storage. Built with HTML and CSS.
+        </p>
+        <div class="mt-3">
+          <a href="https://github.com/razanayyoubi/daily-schedule" target="_blank"
+            class="text-xl text-gray-400 hover:text-white">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4: Beirut Bites -->
+    <div
+      class="w-[350px] bg-[#2c2c3a] rounded-2xl shadow-lg transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_8px_2px_#BFA3FB]">
+      <div class="h-44 w-full overflow-hidden rounded-t-2xl bg-[#DDD6FE] flex items-center justify-center">
+        <img src="./Images/Beirut Bites.png" alt="Beirut Bites"
+          class="w-full h-full object-cover border-b-4 border-[#DDD6FE]">
+      </div>
+      <div class="p-4 text-white">
+        <h3 class="text-lg font-semibold">Beirut Bites</h3>
+        <p class="text-sm text-gray-300 mt-1">
+          A local food delivery app made on Code.org concept with menu browsing and order cart.
+        </p>
+        <div class="mt-3">
+          <a href="https://studio.code.org/projects/applab/b3gogSxFjXn9gdcg240YFzGi7CAwZQib5IkJC39FUaY"
+            target="_blank" class="text-xl text-gray-400 hover:text-white">
+            <i class="fas fa-link"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
   <!-- Skills Section -->
